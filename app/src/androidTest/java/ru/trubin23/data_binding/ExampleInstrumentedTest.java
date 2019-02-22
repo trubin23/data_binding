@@ -1,4 +1,4 @@
-package ru.trubin23.tasksmvploaders;
+package ru.trubin23.databinding;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("ru.trubin23.tasksmvploaders", appContext.getPackageName());
+        assertEquals("ru.trubin23.databinding", appContext.getPackageName());
     }
 }

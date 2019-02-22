@@ -1,4 +1,4 @@
-package ru.trubin23.tasksmvploaders;
+package ru.trubin23.databinding;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

@@ -1,4 +1,4 @@
-package ru.trubin23.tasksmvploaders;
+package ru.trubin23.databinding;
 
 import org.junit.Test;
 
