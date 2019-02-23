@@ -22,11 +22,36 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:id="@+id/address"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{employee.address}"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/name" />
+
+        <Button
+            android:id="@+id/second_employee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="second employee"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/address" />
+
+        <Button
+            android:id="@+id/change_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="change data"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/second_employee" />
+
+        <Button
+            android:id="@+id/invalidate_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="invalidate all"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/change_data" />
 
     </android.support.constraint.ConstraintLayout>
 
