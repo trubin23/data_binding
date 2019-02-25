@@ -10,6 +10,10 @@
         <variable
             name="employee"
             type="ru.trubin23.data_binding.Employee" />
+
+        <variable
+            name="department"
+            type="ru.trubin23.data_binding.Department" />
     </data>
 
     <LinearLayout
@@ -47,6 +51,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{TextUtils.isEmpty(employee.address) ? @string/empty_address : employee.address}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='@{employee.name + (department.name == null ? "" : " ("+department.name+")")}' />
 
     </LinearLayout>
 
