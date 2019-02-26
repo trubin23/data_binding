@@ -96,6 +96,12 @@
             android:onClick="@{view -> handler.onUpdate(employee)}"
             android:text="onUpdate" />
 
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="enabled - two functions"
+            android:onCheckedChanged="@{(view, checked) -> checked ? handler.onEnabled(employee) : handler.onDisabled(employee)}"/>
+
     </LinearLayout>
 
 </layout>
