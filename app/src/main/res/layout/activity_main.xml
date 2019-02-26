@@ -26,6 +26,10 @@
         <variable
             name="map"
             type="Map&lt;String, String&gt;" />
+
+        <variable
+            name="handler"
+            type="ru.trubin23.data_binding.MyHandler" />
     </data>
 
     <LinearLayout
@@ -73,12 +77,24 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{hobbies[2]}"/>
+            android:text="@{hobbies[2]}" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{map[`key 1`]}"/>
+            android:text="@{map[`key 1`]}" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{handler::onClick}"
+            android:text="onClick" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{view -> handler.onUpdate(employee)}"
+            android:text="onUpdate" />
 
     </LinearLayout>
 

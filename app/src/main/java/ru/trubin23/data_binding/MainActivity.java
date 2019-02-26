@@ -14,6 +14,7 @@ import java.util.Map;
 
 import ru.trubin23.data_binding.Department;
 import ru.trubin23.data_binding.Employee;
+import ru.trubin23.data_binding.MyHandler;
 import ru.trubin23.databinding.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         binding.setDepartment(department);
         binding.setHobbies(hobbies);
         binding.setMap(map);
+        binding.setHandler(new MyHandler());
 
         TextView textView = binding.address;
         View rootView = binding.getRoot();
