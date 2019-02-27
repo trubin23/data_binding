@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="android.text.TextUtils" />
+
+        <import type="java.util.List" />
+
+        <import type="java.util.Map" />
+
+        <variable
+            name="employee"
+            type="ru.trubin23.data_binding.Employee" />
+
+        <variable
+            name="department"
+            type="ru.trubin23.data_binding.Department" />
+
+        <variable
+            name="hobbies"
+            type="java.util.List&lt;String&gt;" />
+
+        <variable
+            name="map"
+            type="Map&lt;String, String&gt;" />
+
+        <variable
+            name="handler"
+            type="ru.trubin23.data_binding.MyHandler" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{employee.name}" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{employee.address}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='@{employee.name + ", "+employee.address}' />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(employee.salary)}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{employee.address}"
+            android:visibility="@{TextUtils.isEmpty(employee.address) ? View.GONE : View.VISIBLE}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{TextUtils.isEmpty(employee.address) ? @string/empty_address : employee.address}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='@{employee.name + (department.name == null ? "" : " ("+department.name+")")}' />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{hobbies[2]}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{map[`key 1`]}" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{handler::onClick}"
+            android:text="onClick" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{view -> handler.onUpdate(employee)}"
+            android:text="onUpdate" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="enabled - two functions - Enabled/Disabled"
+            android:onCheckedChanged="@{(view, checked) -> checked ? handler.onEnabled(employee) : handler.onDisabled(employee)}"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="enabled - two functions - Enabled/void"
+            android:onCheckedChanged="@{(view, checked) -> checked ? handler.onEnabled(employee) : void}"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="enabled - one function"
+            android:onCheckedChanged="@{(view, checked) -> handler.onEnabled(employee, checked)}"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="enabled - one function with context"
+            android:onCheckedChanged="@{(view, checked) -> handler.onEnabled(employee, checked, context)}"/>
+
+    </LinearLayout>
+
+</layout>

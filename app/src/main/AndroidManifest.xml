@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name="ru.trubin23.data_binding.SecondActivity"></activity>
+        <activity
+            android:name="ru.trubin23.data_binding.FirstActivity"
+            android:label="@string/title_activity_first"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
