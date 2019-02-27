@@ -99,8 +99,26 @@
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="enabled - two functions"
+            android:text="enabled - two functions - Enabled/Disabled"
             android:onCheckedChanged="@{(view, checked) -> checked ? handler.onEnabled(employee) : handler.onDisabled(employee)}"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="enabled - two functions - Enabled/void"
+            android:onCheckedChanged="@{(view, checked) -> checked ? handler.onEnabled(employee) : void}"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="enabled - one function"
+            android:onCheckedChanged="@{(view, checked) -> handler.onEnabled(employee, checked)}"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="enabled - one function with context"
+            android:onCheckedChanged="@{(view, checked) -> handler.onEnabled(employee, checked, context)}"/>
 
     </LinearLayout>
 

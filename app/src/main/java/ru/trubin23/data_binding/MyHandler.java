@@ -1,5 +1,6 @@
 package ru.trubin23.data_binding;
 
+import android.content.Context;
 import android.util.Log;
 import android.view.View;
 
@@ -13,6 +14,14 @@ public class MyHandler {
 
     public void onClick(View view){
         Log.d(TAG, "onClick");
+    }
+
+    public void onEnabled(Employee employee, boolean enabled, Context context){
+        Log.d(TAG, "----------");
+        Log.d(TAG, "onEnabled: " + context.toString());
+        Log.d(TAG, "onEnabled: " + employee.toString());
+        Log.d(TAG, "onEnabled: " + enabled);
+        Log.d(TAG, "----------");
     }
 
     public void onEnabled(Employee employee, boolean enabled){
