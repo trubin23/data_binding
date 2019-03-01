@@ -36,7 +36,7 @@ public class FirstActivity extends AppCompatActivity {
         map.put("key 3", "value 3");
 
         final ActivityFirstBinding binding =
-                DataBindingUtil.setContentView(this, R.layout.activity_main);
+                DataBindingUtil.setContentView(this, R.layout.activity_first);
         binding.setEmployee(employee);
         binding.setDepartment(department);
         binding.setHobbies(hobbies);
