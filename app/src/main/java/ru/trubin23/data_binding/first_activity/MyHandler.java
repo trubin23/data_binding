@@ -1,4 +1,4 @@
-package ru.trubin23.data_binding;
+package ru.trubin23.data_binding.first_activity;
 
 import android.content.Context;
 import android.util.Log;

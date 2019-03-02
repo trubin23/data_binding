@@ -1,4 +1,4 @@
-package ru.trubin23.data_binding;
+package ru.trubin23.data_binding.second_activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

@@ -1,28 +1,28 @@
 package ru.trubin23.databinding;
 
-import android.databinding.DataBindingUtil;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 
-import ru.trubin23.databinding.databinding.ActivityFirstBinding;
+import ru.trubin23.data_binding.first_activity.FirstActivity;
+import ru.trubin23.data_binding.second_activity.SecondActivity;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        final ActivityFirstBinding binding =
-                DataBindingUtil.setContentView(this, R.layout.activity_main);
+        setContentView(R.layout.activity_main);
     }
 
     public void onClickFirstButton(View view) {
-        Log.d("MainActivity", "FirstButton");
+        Intent intent = new Intent(this, FirstActivity.class);
+        startActivity(intent);
     }
 
     public void onClickSecondButton(View view) {
-        Log.d("MainActivity", "SecondButton");
+        Intent intent = new Intent(this, SecondActivity.class);
+        startActivity(intent);
     }
 }

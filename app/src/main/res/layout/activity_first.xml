@@ -13,11 +13,11 @@
 
         <variable
             name="employee"
-            type="ru.trubin23.data_binding.Employee" />
+            type="ru.trubin23.data_binding.first_activity.Employee" />
 
         <variable
             name="department"
-            type="ru.trubin23.data_binding.Department" />
+            type="ru.trubin23.data_binding.first_activity.Department" />
 
         <variable
             name="hobbies"
@@ -29,7 +29,7 @@
 
         <variable
             name="handler"
-            type="ru.trubin23.data_binding.MyHandler" />
+            type="ru.trubin23.data_binding.first_activity.MyHandler" />
     </data>
 
     <LinearLayout
