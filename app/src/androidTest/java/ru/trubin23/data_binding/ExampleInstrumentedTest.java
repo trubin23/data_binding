@@ -1,4 +1,4 @@
-package ru.trubin23.databinding;
+package ru.trubin23.data_binding;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

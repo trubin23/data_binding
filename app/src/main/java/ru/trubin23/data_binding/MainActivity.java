@@ -1,4 +1,4 @@
-package ru.trubin23.databinding;
+package ru.trubin23.data_binding;
 
 import android.content.Intent;
 import android.os.Bundle;

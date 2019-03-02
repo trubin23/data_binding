@@ -1,4 +1,4 @@
-package ru.trubin23.databinding;
+package ru.trubin23.data_binding;
 
 import org.junit.Test;
 

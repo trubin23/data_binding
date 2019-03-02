@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ru.trubin23.databinding">
+    package="ru.trubin23.data_binding">
 
     <application
         android:allowBackup="true"
@@ -14,7 +14,7 @@
             android:name="ru.trubin23.data_binding.first_activity.FirstActivity"
             android:label="@string/title_activity_first"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MainActivity">
+        <activity android:name="ru.trubin23.data_binding.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

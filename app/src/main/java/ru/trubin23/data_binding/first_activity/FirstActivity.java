@@ -12,8 +12,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import ru.trubin23.databinding.R;
-import ru.trubin23.databinding.databinding.ActivityFirstBinding;
+import ru.trubin23.data_binding.R;
+import ru.trubin23.data_binding.databinding.ActivityFirstBinding;
 
 public class FirstActivity extends AppCompatActivity {
 
