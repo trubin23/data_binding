@@ -13,7 +13,10 @@ public class Employee {
 
     public ObservableInt salary = new ObservableInt();
 
-    public Employee(long id, String name, String address, int salary){
-
+    public Employee(long id, String name, String address, int salary) {
+        this.id = id;
+        this.name.set(name);
+        this.address = address;
+        this.salary.set(salary);
     }
 }

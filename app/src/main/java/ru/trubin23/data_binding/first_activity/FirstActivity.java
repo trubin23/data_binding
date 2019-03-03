@@ -20,7 +20,6 @@ public class FirstActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_first);
 
         Employee employee = new Employee(1, "John Smith", "London", 10_000);
         Department department = new Department(100, "IT");
