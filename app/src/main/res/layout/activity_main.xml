@@ -16,4 +16,10 @@
         android:onClick="onClickSecondButton"
         android:text="Second activity" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickThirdButton"
+        android:text="Third activity" />
+
 </LinearLayout>

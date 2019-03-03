@@ -7,6 +7,7 @@ import android.view.View;
 
 import ru.trubin23.data_binding.first_activity.FirstActivity;
 import ru.trubin23.data_binding.second_activity.SecondActivity;
+import ru.trubin23.data_binding.third_activity.ThirdActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,6 +24,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickSecondButton(View view) {
         Intent intent = new Intent(this, SecondActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickThirdButton(View view) {
+        Intent intent = new Intent(this, ThirdActivity.class);
         startActivity(intent);
     }
 }
