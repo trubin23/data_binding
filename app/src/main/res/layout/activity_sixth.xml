@@ -26,5 +26,10 @@
             app:url="@{employee.avatarUrl}"
             app:errorImage="@{@android:drawable/alert_dark_frame}"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{employee.hobbies}"/>
+
     </LinearLayout>
 </layout>
