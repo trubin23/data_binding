@@ -22,4 +22,10 @@
         android:onClick="onClickThirdButton"
         android:text="Third activity" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickFourthButton"
+        android:text="Fourth activity" />
+
 </LinearLayout>
