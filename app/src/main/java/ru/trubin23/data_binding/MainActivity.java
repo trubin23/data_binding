@@ -9,6 +9,7 @@ import ru.trubin23.data_binding.fifth_activity.FifthActivity;
 import ru.trubin23.data_binding.first_activity.FirstActivity;
 import ru.trubin23.data_binding.fourth_activity.FourthActivity;
 import ru.trubin23.data_binding.second_activity.SecondActivity;
+import ru.trubin23.data_binding.sixth_activity.SixthActivity;
 import ru.trubin23.data_binding.third_activity.ThirdActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -41,6 +42,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickFifthButton(View view) {
         Intent intent = new Intent(this, FifthActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickSixthButton(View view) {
+        Intent intent = new Intent(this, SixthActivity.class);
         startActivity(intent);
     }
 }
