@@ -40,4 +40,10 @@
         android:onClick="onClickSixthButton"
         android:text="Sixth activity" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickSeventhButton"
+        android:text="Seventh activity" />
+
 </LinearLayout>
