@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import ru.trubin23.data_binding.eighth_activity.EighthActivity;
 import ru.trubin23.data_binding.fifth_activity.FifthActivity;
 import ru.trubin23.data_binding.first_activity.FirstActivity;
 import ru.trubin23.data_binding.fourth_activity.FourthActivity;
@@ -53,6 +54,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickSeventhButton(View view) {
         Intent intent = new Intent(this, SeventhActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickEighthButton(View view) {
+        Intent intent = new Intent(this, EighthActivity.class);
         startActivity(intent);
     }
 }
