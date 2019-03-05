@@ -52,4 +52,10 @@
         android:onClick="onClickEighthButton"
         android:text="Eighth activity" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickNinthButton"
+        android:text="Ninth activity" />
+
 </LinearLayout>
